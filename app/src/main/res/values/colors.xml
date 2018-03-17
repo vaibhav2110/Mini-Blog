@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ebb19f</color>
+    <color name="colorPrimaryDark">#e0655c</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="black_alpha_40">#66000000</color>
+    <color name="gray">#b8b8b8</color>
+    <color name="darkpink">#df5150</color>
+    <color name="transorange">#ab996c5d</color>
+    <color name="setupbg">#290606</color>
+    <color name="black">#000000</color>
+</resources>

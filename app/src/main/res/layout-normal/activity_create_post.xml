@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_create_post"
+    android:layout_width="match_parent"
+    android:fitsSystemWindows="true"
+    android:windowSoftInputMode="adjustPan"
+    android:background="@drawable/postbg"
+    android:layout_height="match_parent"
+    tools:context="com.vp.firebaseapp.CreatePost">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:layout_below="@+id/editText"
+        android:layout_marginTop="40dp"
+        android:id="@+id/editText2"
+        android:paddingLeft="40dp"
+        android:background="@drawable/input_source"
+        android:paddingRight="40dp"
+        android:paddingTop="20dp"
+        android:padding="10dp"
+        android:layout_marginLeft="20dp"
+        android:hint="Post Description..."
+        android:layout_centerHorizontal="true"
+        android:textStyle="normal|bold"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:layout_marginRight="20dp"
+        android:fontFamily="sans-serif" />
+
+    <Button
+        android:text="Post"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/post"
+        android:textStyle="normal|bold"
+        android:textColor="@android:color/white"
+        android:background="#f73267"
+        android:fontFamily="sans-serif"
+        android:textSize="14sp" />
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:minHeight="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:titleTextColor="@android:color/white"
+        android:background="@drawable/bg_toolbar"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+    </android.support.v7.widget.Toolbar>
+
+
+
+    <ImageButton
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/proim"
+        android:id="@+id/imageButton"
+        android:background="@android:color/transparent"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
+        android:layout_marginTop="39dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/editText"
+        android:hint="Title"
+        android:background="@drawable/input_source"
+        android:paddingLeft="50dp"
+        android:paddingRight="40dp"
+        android:paddingTop="30dp"
+        android:padding="10dp"
+        android:layout_marginLeft="20dp"
+        android:singleLine="true"
+        android:textStyle="normal|bold"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:layout_marginRight="20dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>

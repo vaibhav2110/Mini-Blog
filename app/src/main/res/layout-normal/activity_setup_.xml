@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_setup_"
+    android:layout_width="match_parent"
+    android:fitsSystemWindows="true"
+    android:windowSoftInputMode="adjustPan"
+
+    android:layout_height="match_parent"
+    android:background="@drawable/setbg"
+    tools:context="com.vp.firebaseapp.Setup_Activity">
+
+    <Button
+        android:text="Finish Set Up"
+        android:background="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/Finish"
+        android:fontFamily="cursive"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:textColorHint="@android:color/white"
+        android:textColorHighlight="@android:color/white"
+        android:textColor="@android:color/white"
+        android:textStyle="normal|bold" />
+
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/selpic"
+        android:elevation="0dp"
+        android:cropToPadding="false"
+        android:visibility="visible"
+        android:background="@android:color/transparent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:paddingBottom="200dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:background="@drawable/final_text"
+        android:id="@+id/editname"
+        android:hint="Enter Username..."
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:fontFamily="cursive"
+        android:textStyle="normal|bold"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:textColorHighlight="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_below="@+id/selpic"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="151dp" />
+
+
+</RelativeLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.vp.firebaseapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
+    <application
+        android:name=".Firebaseapp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Mini Blog"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".CreatePost"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".RegisterAct"
+            android:parentActivityName=".login_activity" />
+        <activity
+            android:name=".login_activity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".Setup_Activity" />
+        <activity android:name=".Single_user" />
+        <activity android:name=".QuestionBank"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".BranchMaterialFragment" />
+        <activity android:name=".CaptionedImagesAdapter" />
+        <activity android:name=".TermDetailActivity"
+            android:parentActivityName=".QuestionBank"/>
+        <activity android:name=".final_activity"
+            android:parentActivityName=".TermDetailActivity"></activity>
+    </application>
+
+</manifest>
